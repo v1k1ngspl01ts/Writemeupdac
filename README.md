@@ -1,5 +1,4 @@
 Writemeupdac exploits windows services that have WRITE_DAC privilege for a user/group that the attacker controls. The following is the help menu:
-
 ```
 Check for writedac:
 .\<binary name> check
@@ -25,8 +24,7 @@ Exploit will not stop any dependent services. Use the stop command to stop the d
 
 If you intend to change a dacl for a user or group, be absolutely sure the user/group exits and is spelled correctly. Otherwise, the DACLs for the service will be completely removed with no dacls remaining.
 ```
-
-Notes:
+#Notes:
 
 The check command is currently show some false positives for fully exploitable services such as AppXSvc. Will look into later.
 
